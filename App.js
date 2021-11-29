@@ -34,6 +34,7 @@ const App = () => {
 const styles = StyleSheet.create({
   contenedor: {
     backgroundColor: 'cornflowerblue',
+    // Toma todo lo alto de la pantalla
     flex: 1,
     // Cambias la direccion del flex box por default estan en columnas
     // flexDirection: 'row',
@@ -44,18 +45,25 @@ const styles = StyleSheet.create({
   caja1: {
     padding: 20,
     backgroundColor: 'navy',
+    // Indica que tomara todo el espacio sobrante dependiente del padre
+    flex: 1,
   },
-  caja2:{
+  caja2: {
     padding: 20,
     backgroundColor: 'yellow',
+    // Tomara el espacio propocional
+    flex: 1,
   },
-  caja3:{
+  caja3: {
     padding: 20,
     backgroundColor: 'green',
+    flex: 1,
   },
-  caja4:{
+  caja4: {
     padding: 20,
     backgroundColor: 'teal',
+    // Tomara mayour parte proporcional
+    flex: 3,
   },
 });
 export default App;
